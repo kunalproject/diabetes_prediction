@@ -1,6 +1,18 @@
 {
+  "name": "diabetes-prediction-api",
+  "version": "1.0.0",
+  "description": "Node.js + Python diabetes prediction API",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "chmod +x render-build.sh && ./render-build.sh"
+    "build": "npm install && chmod +x render-build.sh && ./render-build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "18.x"  // or your preferred Node version
   }
 }
